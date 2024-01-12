@@ -10,6 +10,12 @@ class Assets{
   static const birdDownFlap ='bird_downflap.png';
   
   static const gameOver ='assets/images/gameover.png';
-  static const menu ='assets/images/menu.png';
+  static const menu ='assets/images/menu.jpg';
   static const message ='assets/images/message.png';
+
+
+
+  static const birdFlapSound ='fly.wav';
+  static const hitPipeSound ='collision.wav';
+  static const pointSound ='point.wav';
 }

@@ -1,10 +1,11 @@
 import 'dart:async';
 
+import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/flame.dart';
 import 'package:flappy_bird/game/assets.dart';
 import 'package:flappy_bird/game/config.dart';
-import 'package:flappy_bird/game/fluppy_bird_game.dart';
+import 'package:flappy_bird/game/flappy_bird_game.dart';
 import 'package:flappy_bird/game/pipe_position.dart';
 
 class Pipe extends SpriteComponent with HasGameRef<FlappyBirdGame> {
@@ -32,5 +33,7 @@ class Pipe extends SpriteComponent with HasGameRef<FlappyBirdGame> {
         sprite = Sprite(pipe);
         break;
     }
+
+    add(RectangleHitbox());
   }
 }
